@@ -242,15 +242,15 @@ short-answer q4 "What does 'DOM' stand for?" 20 "Enter your answer" ["Document O
 
 ## Contributing
 
-- **New widgets**: [Open issue](https://github.com/BlueprintDesignLab/markdown-ui/issues/new) with use case
-- **Parser/renderer ports**: [PRs welcome](https://github.com/BlueprintDesignLab/markdown-ui/pulls)
-- **Spec changes**: [Discuss in issues](https://github.com/BlueprintDesignLab/markdown-ui/issues) first
+- **New widgets**: [Open issue](https://github.com/BlueprintLabIO/markdown-ui/issues/new) with use case
+- **Parser/renderer ports**: [PRs welcome](https://github.com/BlueprintLabIO/markdown-ui/pulls)
+- **Spec changes**: [Discuss in issues](https://github.com/BlueprintLabIO/markdown-ui/issues) first
 
 ## Resources
 
 - 🌐 **[Live Demo](https://markdown-ui.com/)** - Try all widgets interactively
 - 📖 **[Technical Specification](https://markdown-ui.com/spec)** - Complete spec documentation
 - 📦 **[npm Packages](https://www.npmjs.com/search?q=%40markdown-ui)** - All available packages
-- 🐙 **[GitHub Repository](https://github.com/BlueprintDesignLab/markdown-ui)** - Source code & issues
+- 🐙 **[GitHub Repository](https://github.com/BlueprintLabIO/markdown-ui)** - Source code & issues
 
 MIT © 2025
