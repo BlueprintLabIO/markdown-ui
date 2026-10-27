@@ -91,10 +91,9 @@ Documentation,15
 
 \`\`\`markdown-ui-widget
 chart-line
-id: sales
+id: sales_performance
 title: Sales vs Target
 height: 350
-id: sales_performance
 Month,Sales,Target
 Jan,45000,50000
 Feb,52000,50000
@@ -132,10 +131,10 @@ short-answer q4 "What does 'DOM' stand for?" 20 "Enter your answer" ["Document O
 \`\`\`
 
 ## Why it's powerful
-- Copy-paste from into an LLM system prompt and use instantly
+- Paste the spec into an LLM system prompt and use it instantly
 - Great for forms, surveys, guides, onboarding, or automating tasks
 - LLMs generate UI for you, just describe your need
-- Works in React, Svelte, and Vue, wherever Markdown is used
+- Works in React, Svelte, Vue and plain JavaScript, wherever Markdown is used
 
 ---
 

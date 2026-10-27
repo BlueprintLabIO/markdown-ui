@@ -16,7 +16,7 @@ This page demonstrates all available React widgets with various configurations f
 
 ### Text Input with Label
 \`\`\`markdown-ui-widget
-text-input name "Your Name" Enter your full name
+text-input name "Your Name" "Enter your full name"
 \`\`\`
 
 ## ButtonGroup Widgets
@@ -35,7 +35,7 @@ button-group color [Red Green Blue Yellow] Red
 
 ### Country Selection
 \`\`\`markdown-ui-widget
-select country ["United States" Canada United Kingdom Germany France Japan Australia] "United States"
+select country ["United States" Canada "United Kingdom" Germany France Japan Australia] "United States"
 \`\`\`
 
 ## SelectMulti Widgets
@@ -47,7 +47,7 @@ select-multi languages [JavaScript Python Java C++ Go Rust TypeScript] [JavaScri
 
 ### Features Selection
 \`\`\`markdown-ui-widget
-select-multi features [Dark Mode Notifications Sync Offline Analytics Export] [Dark Mode Notifications]
+select-multi features ["Dark Mode" Notifications Sync Offline Analytics Export] ["Dark Mode" Notifications]
 \`\`\`
 
 ## Slider Widgets
@@ -96,7 +96,7 @@ Product D,180,170,190
 \`\`\`markdown-ui-widget
 chart-pie
 id: market-share
-title: Browser Market Share
+title: Browser Market Share (sample data)
 height: 350
 Browser,Share
 Chrome,65

@@ -39,7 +39,7 @@ Watch how the quiz renders progressively as content streams in:
 quiz streaming-demo "Streaming Quiz Demo"
 showScore: true
 showProgress: true
-mcq q1 "What technology does this demo showcase?" 10 ["React" "Svelte" "Vue" "All of the above"] "All of the above"
+mcq q1 "Which frameworks have a markdown-ui renderer?" 10 ["React" "Svelte" "Vue" "All of the above"] "All of the above"
 mcq q2 "What problem does streaming-aware parsing solve?" 10 ["Flickering UI" "Slow rendering" "Memory leaks" "Network errors"] "Flickering UI"
 short-answer q3 "What file extension is used for markdown-ui widgets?" 10 "" [".md" "md" "markdown"]
 \`\`\`

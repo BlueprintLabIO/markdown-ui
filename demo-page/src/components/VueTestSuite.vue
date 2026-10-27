@@ -15,7 +15,7 @@ const comprehensiveTestMarkdown = `# Vue Widget Test Suite
 
 ### Text Input with Label
 \`\`\`markdown-ui-widget
-text-input name "Your Name" Enter your full name
+text-input name "Your Name" "Enter your full name"
 \`\`\`
 
 ## ButtonGroup Widgets
@@ -34,7 +34,7 @@ button-group color [Red Green Blue Yellow] Red
 
 ### Country Selection
 \`\`\`markdown-ui-widget
-select country ["United States" Canada United Kingdom Germany France Japan Australia] "United States"
+select country ["United States" Canada "United Kingdom" Germany France Japan Australia] "United States"
 \`\`\`
 
 ## SelectMulti Widgets
@@ -95,7 +95,7 @@ Product D,180,170,190
 \`\`\`markdown-ui-widget
 chart-pie
 id: vue-market-share
-title: Browser Market Share
+title: Browser Market Share (sample data)
 height: 350
 Browser,Share
 Chrome,65
