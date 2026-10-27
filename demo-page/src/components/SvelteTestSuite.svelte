@@ -11,8 +11,6 @@
 
 ## TextInput Widgets
 
-### Basic Text Input
-
 ### Text Input with Label
 \`\`\`markdown-ui-widget
 text-input name "Your Name" "Enter your full name"
@@ -161,7 +159,7 @@ Custom placeholder for collecting detailed responses - no right or wrong answers
 short-answer-question q5 "Describe your favorite programming concept" "Type your thoughts here..."
 \`\`\`
 
-## Quiz Component
+## Full Quiz
 
 ### JavaScript Fundamentals Quiz - Full Featured
 Complete quiz with scoring, progress tracking, and mixed question types.
