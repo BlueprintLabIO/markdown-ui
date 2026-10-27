@@ -51,6 +51,7 @@
 			extensions: [
 				basicSetup,
 				markdown(),
+				EditorView.lineWrapping,
 				EditorView.updateListener.of((update) => {
 					if (update.docChanged) {
 						currentMarkdown = update.state.doc.toString();

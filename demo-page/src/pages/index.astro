@@ -4,7 +4,9 @@ import MarkdownEditor from '../components/MarkdownEditor.svelte';
 ---
 
 <Layout title="Markdown UI - Interactive Editor & Demo">
-  <MarkdownEditor client:only="svelte" />
+  <MarkdownEditor client:only="svelte">
+    <div slot="fallback" class="h-full flex items-center justify-center text-sm text-neutral-500">Loading editor…</div>
+  </MarkdownEditor>
 </Layout>
 
 <style>

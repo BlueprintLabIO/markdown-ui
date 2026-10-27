@@ -276,7 +276,7 @@ Output rules:
 	});
 </script>
 
-<div class="h-screen bg-white flex flex-col overflow-hidden">
+<div class="h-full bg-white flex flex-col overflow-hidden">
 	<!-- System Message Modal -->
 	{#if showSystemMessage}
 		<div class="fixed inset-0 z-50 flex items-center justify-center p-4">

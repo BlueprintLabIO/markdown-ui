@@ -13,7 +13,7 @@ Transform any Markdown note, checklist, or section of text into a live experienc
 { "type": "button-group", "id": "plan", "label": "Plan", "choices": ["Brainstorm", "Review", "Launch"], "default": "Brainstorm" }
 \`\`\`
 
-Test with Chinese characters:
+Pick a language:
 
 \`\`\`markdown-ui-widget
 button-group language [English 中文 日本語 한국어] English
