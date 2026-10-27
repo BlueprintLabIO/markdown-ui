@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import SpecRenderer from '../components/SpecRenderer.svelte';
 
 const specContent = `# Markdown UI Technical Specification
-**Version:** 0.3
+**Version:** 0.4
 **Status:** Alpha  
-**Date:** 8 September 2025
+**Date:** 12 January 2026
 
 ## Overview
 
@@ -559,6 +559,17 @@ Renderers MUST:
 - Invalid JSON SHOULD be rendered as code blocks
 - Unsupported widget types SHOULD be rendered as code blocks
 - Missing required properties SHOULD be handled with sensible defaults
+
+### 6.4 Streaming
+
+When widgets are rendered while a model is still writing them, the input can end mid-declaration.
+
+- Streaming parsers MAY return a partial widget with a \`complete\` flag set to \`false\`, plus what is still pending (an unclosed bracket, an unclosed quote, or quiz questions still to come)
+- Unclosed brackets and quotes MUST NOT cause the block to fall back to a code block while input is still arriving
+- Renderers SHOULD show a loading state for incomplete widgets instead of flickering between partial renders
+- Once the closing fence arrives, the widget MUST be parsed and rendered exactly as in non-streaming mode
+
+The reference implementations are \`parseDSLStreaming\` in \`@markdown-ui/mdui-lang\` and \`markedUiStreamingExtension\` in \`@markdown-ui/marked-ext\`.
 
 ## Extension Points
 
