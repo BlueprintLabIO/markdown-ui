@@ -68,6 +68,7 @@ const isActive = (path: string) => Astro.url.pathname === path;
         <ul id="site-menu" class="hidden md:flex items-center gap-1">
           <li><a href="/" class:list={[isActive('/') && 'text-blue-600 bg-blue-50']} class="px-3 py-1.5 rounded-md text-sm text-neutral-700 hover:bg-neutral-100 block">Home</a></li>
           <li><a href="/chat" class:list={[isActive('/chat') && 'text-blue-600 bg-blue-50']} class="px-3 py-1.5 rounded-md text-sm text-neutral-700 hover:bg-neutral-100 block">Chat Demo</a></li>
+          <li><a href="/quickstart" class:list={[isActive('/quickstart') && 'text-blue-600 bg-blue-50']} class="px-3 py-1.5 rounded-md text-sm text-neutral-700 hover:bg-neutral-100 block">Quickstart</a></li>
           <!-- <li><a href="/docs/getting-started" class:list={[Astro.url.pathname.startsWith('/docs') && 'text-blue-600 bg-blue-50']} class="px-3 py-1.5 rounded-md text-sm text-neutral-700 hover:bg-neutral-100 block">Documentation</a></li> -->
           
           <li class="relative group">

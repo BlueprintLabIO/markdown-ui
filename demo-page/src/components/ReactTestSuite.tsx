@@ -6,9 +6,7 @@ import { markedUiExtension } from '@markdown-ui/marked-ext';
 const marked = new Marked();
 marked.use(markedUiExtension);
 
-const comprehensiveTestMarkdown = `# React Widget Test Suite
-
-This page demonstrates all available React widgets with various configurations for comprehensive testing.
+const comprehensiveTestMarkdown = `This page demonstrates all available React widgets with various configurations for comprehensive testing.
 
 ## TextInput Widgets
 
@@ -191,7 +189,7 @@ export default function ReactTestSuite() {
               <p className="text-gray-600 mt-1">Comprehensive testing page for all @markdown-ui/react widgets</p>
             </div>
             <div className="text-sm text-gray-500 font-mono bg-gray-100 px-3 py-1 rounded">
-              @markdown-ui/react v0.2.0
+              @markdown-ui/react v0.4.0
             </div>
           </div>
         </div>

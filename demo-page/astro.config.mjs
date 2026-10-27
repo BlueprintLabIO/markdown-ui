@@ -10,6 +10,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), svelte(), vue()],
+  site: 'https://markdown-ui.yaoke.pro',
   output: 'static',
   // The old docs page was never finished; send its links to the quickstart.
   redirects: { '/docs/getting-started': '/quickstart' },

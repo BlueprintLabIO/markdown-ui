@@ -7,9 +7,7 @@
   const marked = new Marked();
   marked.use(markedUiExtension);
 
-  const comprehensiveTestMarkdown = `# Svelte Widget Test Suite
-
-## TextInput Widgets
+  const comprehensiveTestMarkdown = `## TextInput Widgets
 
 ### Text Input with Label
 \`\`\`markdown-ui-widget
@@ -188,7 +186,7 @@ short-answer q4 "What does 'DOM' stand for?" 20 "Enter your answer" ["Document O
           <p class="text-gray-600 mt-1">Comprehensive testing page for all @markdown-ui/svelte widgets</p>
         </div>
         <div class="text-sm text-gray-500 font-mono bg-gray-100 px-3 py-1 rounded">
-          @markdown-ui/svelte v0.2.0
+          @markdown-ui/svelte v0.4.0
         </div>
       </div>
     </div>

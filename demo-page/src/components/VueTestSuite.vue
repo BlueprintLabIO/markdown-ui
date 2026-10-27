@@ -7,9 +7,7 @@ import { markedUiExtension } from '@markdown-ui/marked-ext';
 const marked = new Marked();
 marked.use(markedUiExtension);
 
-const comprehensiveTestMarkdown = `# Vue Widget Test Suite
-
-## TextInput Widgets
+const comprehensiveTestMarkdown = `## TextInput Widgets
 
 ### Text Input with Label
 \`\`\`markdown-ui-widget
@@ -208,7 +206,7 @@ const renderedHtml = marked.parse(comprehensiveTestMarkdown + quizAndQA);
             <p class="text-gray-600 mt-1">Comprehensive testing page for all @markdown-ui/vue widgets</p>
           </div>
           <div class="text-sm text-gray-500 font-mono bg-gray-100 px-3 py-1 rounded">
-            @markdown-ui/vue v0.2.0
+            @markdown-ui/vue v0.4.0
           </div>
         </div>
       </div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://markdown-ui.yaoke.pro/</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/quickstart</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/spec</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/implementations</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/chat</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/streaming</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/changelog</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/react-test-suite</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/svelte-test-suite</loc></url>
+  <url><loc>https://markdown-ui.yaoke.pro/vue-test-suite</loc></url>
+</urlset>

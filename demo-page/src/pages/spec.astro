@@ -52,9 +52,10 @@ widget-type id [parameters...]
 All widget declarations MUST:
 - Be valid JSON (RFC 7159)
 - Include a \`type\` property specifying the widget type
-- Include an \`id\` property for event identification (optional, auto-generated if omitted)
 - Use double quotes for all strings
 - Not include trailing commas or comments
+
+Widget declarations SHOULD include an \`id\` property for event identification. If it is omitted, the parser generates one.
 
 ### 3.3 Intermediate XML Format
 

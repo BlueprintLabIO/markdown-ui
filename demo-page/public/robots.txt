@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://markdown-ui.yaoke.pro/sitemap.xml
