@@ -116,7 +116,7 @@ Output rules:
 	const offlineReplies: Record<string, string> = {
 		'Show me Bitcoin vs Ethereum price trends': `Here is a sample of how the two moved over six months (illustrative numbers).
 
-\`\`\`
+\`\`\`markdown-ui-widget
 chart-line
 id: crypto_trends
 title: Bitcoin vs Ethereum (sample data)
@@ -131,7 +131,7 @@ Dec,74000,4000
 \`\`\``,
 		'Create a startup growth dashboard': `Users and revenue for a fast-growing startup (sample data).
 
-\`\`\`
+\`\`\`markdown-ui-widget
 chart-bar
 id: startup_growth
 title: Startup User Growth
@@ -146,12 +146,12 @@ Jun,80000,320000
 \`\`\``,
 		'Design a coffee shop menu configurator': `Pick a size to start your order.
 
-\`\`\`
+\`\`\`markdown-ui-widget
 button-group coffee_size [Small Medium Large XL] Medium
 \`\`\``,
 		'Build a Mars mission control panel': `Configure your mission and launch.
 
-\`\`\`
+\`\`\`markdown-ui-widget
 form mission_config "Launch Mission"
   select destination [Mars Jupiter Europa Titan]
   slider crew_size 3 12 1
@@ -160,7 +160,7 @@ form mission_config "Launch Mission"
 	};
 	const offlineDefault = `Thanks! Try adjusting this widget, every change is sent back to the chat as an event.
 
-\`\`\`
+\`\`\`markdown-ui-widget
 slider warp_speed 1 10 1 7
 \`\`\``;
 
