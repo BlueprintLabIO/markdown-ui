@@ -8,6 +8,31 @@ import Layout from '../layouts/Layout.astro';
 			<h1>Changelog</h1>
 			<p>All notable changes to markdown-ui will be documented here.</p>
 
+			<h2>v0.4.0 - Streaming &amp; Vanilla Renderer <span class="text-sm font-normal text-zinc-500">January 12, 2026</span></h2>
+
+			<h3>⚡ Streaming</h3>
+			<ul>
+				<li><code>parseDSLStreaming</code> in <code>@markdown-ui/mdui-lang</code> and <code>markedUiStreamingExtension</code> in <code>@markdown-ui/marked-ext</code> render widgets while an LLM is still writing them</li>
+				<li>Unclosed brackets and quotes are handled, and incomplete widgets and quizzes show a loading state instead of flickering</li>
+				<li>New <a href="/streaming">streaming demo</a></li>
+			</ul>
+
+			<h3>🧩 Vanilla renderer</h3>
+			<ul>
+				<li>New <code>@markdown-ui/vanilla</code> (0.2.0) renders every widget with plain JavaScript, no framework needed</li>
+			</ul>
+
+			<h3>📦 Versions</h3>
+			<ul>
+				<li><code>mdui-lang</code>, <code>react</code>, <code>svelte</code> and <code>vue</code> 0.4.0; <code>marked-ext</code> 1.4.0</li>
+			</ul>
+
+			<h2>v0.3.1 - International Text <span class="text-sm font-normal text-zinc-500">September 16, 2025</span></h2>
+
+			<ul>
+				<li>Widget data is now URI-encoded instead of base64, so Chinese, Japanese, Korean and other non-Latin text works in every widget</li>
+			</ul>
+
 			<h2>v0.3.0 - Quiz & Question Widgets <span class="text-sm font-normal text-zinc-500">September 8, 2025</span></h2>
 
 			<h3>🎯 New Widgets</h3>
