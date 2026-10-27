@@ -11,6 +11,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   integrations: [react(), svelte(), vue()],
   output: 'static',
+  // The old docs page was never finished; send its links to the quickstart.
+  redirects: { '/docs/getting-started': '/quickstart' },
   vite: {
     ssr: {
       noExternal: ['@markdown-ui/react', '@markdown-ui/svelte', '@markdown-ui/vue', '@markdown-ui/marked-ext', 'marked']
