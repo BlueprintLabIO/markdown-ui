@@ -24,7 +24,7 @@ The Markdown UI specification defines a two-stage processing pipeline:
 
 - **Framework Agnostic**: Any Markdown parser can be combined with any UI renderer
 - **Progressive Enhancement**: Graceful fallback to code blocks when rendering is unavailable
-- **Security First**: JSON-only payloads prevent code injection attacks
+- **Data, Not Code**: Payloads are JSON data, never executable code
 - **Event Standardization**: Consistent event interface across all widget types
 
 ## Specification Format
@@ -577,7 +577,7 @@ Standard widgets MAY accept implementation-specific properties that:
 
 ## Security Considerations
 
-- JSON payloads prevent code injection
+- Payloads are JSON data with no executable code; renderers must still escape values when displaying them
 - URL encoding ensures safe transport
 - No executable code in widget definitions
 - Event values should be sanitized by consuming applications
@@ -612,6 +612,7 @@ See the [Home page](/) for interactive examples of all widget types.
 - **Svelte Renderer**: [@markdown-ui/svelte](https://www.npmjs.com/package/@markdown-ui/svelte)  
 - **React Renderer**: [@markdown-ui/react](https://www.npmjs.com/package/@markdown-ui/react)
 - **Vue Renderer**: [@markdown-ui/vue](https://www.npmjs.com/package/@markdown-ui/vue)
+- **Vanilla JS Renderer**: [@markdown-ui/vanilla](https://www.npmjs.com/package/@markdown-ui/vanilla) - No framework needed
 
 📦 **[View all packages and live demos →](/implementations)**
 
