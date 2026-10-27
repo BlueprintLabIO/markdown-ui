@@ -110,6 +110,60 @@ Output rules:
 - Prioritize showing chart examples first to demonstrate the new capabilities.
 `
 
+
+	// Recorded replies so the demo still works when the live model proxy is unreachable.
+	const offlineNote = '\n\n_The live AI demo is offline right now, so this is a recorded reply._';
+	const offlineReplies: Record<string, string> = {
+		'Show me Bitcoin vs Ethereum price trends': `Here is a sample of how the two moved over six months (illustrative numbers).
+
+\`\`\`
+chart-line
+id: crypto_trends
+title: Bitcoin vs Ethereum (sample data)
+height: 320
+Month,Bitcoin,Ethereum
+Jul,65000,3200
+Aug,62000,3100
+Sep,66000,3400
+Oct,69000,3600
+Nov,71000,3800
+Dec,74000,4000
+\`\`\``,
+		'Create a startup growth dashboard': `Users and revenue for a fast-growing startup (sample data).
+
+\`\`\`
+chart-bar
+id: startup_growth
+title: Startup User Growth
+height: 300
+Month,Users,Revenue
+Jan,1000,5000
+Feb,2500,12000
+Mar,6000,28000
+Apr,15000,65000
+May,35000,140000
+Jun,80000,320000
+\`\`\``,
+		'Design a coffee shop menu configurator': `Pick a size to start your order.
+
+\`\`\`
+button-group coffee_size [Small Medium Large XL] Medium
+\`\`\``,
+		'Build a Mars mission control panel': `Configure your mission and launch.
+
+\`\`\`
+form mission_config "Launch Mission"
+  select destination [Mars Jupiter Europa Titan]
+  slider crew_size 3 12 1
+  text-input mission_name "Mission Name" "Operation Red Planet"
+\`\`\``
+	};
+	const offlineDefault = `Thanks! Try adjusting this widget, every change is sent back to the chat as an event.
+
+\`\`\`
+slider warp_speed 1 10 1 7
+\`\`\``;
+
 	let messages = $state<ChatMessage[]>([
         {
             id: crypto.randomUUID(),
@@ -232,7 +286,7 @@ Output rules:
 
 		} catch (error) {
 			console.error('Error sending message:', error);
-			const errorContent = `Error: ${error instanceof Error ? error.message : 'Failed to send message'}`;
+			const errorContent = (offlineReplies[userMessage.content] ?? offlineDefault) + offlineNote;
 			
 			// Update the streaming message with error content
 			const errorMsg = messages.find(msg => msg.id === assistantMessageId);
